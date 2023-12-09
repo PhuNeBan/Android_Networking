@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#212832"
+    android:padding="10dp"
+    tools:context=".LoginActivity">
+
+
+    <ImageView
+        android:id="@+id/logo"
+        android:layout_width="200dp"
+        android:layout_height="70dp"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="20dp"
+        android:src="@drawable/polytechnic" />
+
+    <RelativeLayout
+        android:id="@+id/layoutIv"
+        android:background="@drawable/layout_bg"
+        android:layout_below="@id/logo"
+        android:layout_marginBottom="50dp"
+        android:layout_width="match_parent"
+        android:layout_height="250dp">
+
+        <ImageView
+            android:id="@+id/imageViewLogo"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:src="@drawable/pana" />
+    </RelativeLayout>
+
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/textFieldEmail"
+        android:layout_marginBottom="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/layoutIv"
+        android:textColorHint="#8CAAB9"
+        android:hint="Email">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/txtEmail"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="#03A9F4"
+            />
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/textFieldPassword"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Password"
+        android:layout_below="@id/textFieldEmail"
+        android:textColorHint="#8CAAB9"
+        app:endIconMode="password_toggle"
+        app:endIconTint="#8CAAB9">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/txtPassword"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="#03A9F4"
+            android:inputType="textPassword" />
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <RelativeLayout
+        android:id="@+id/layoutTv"
+        android:layout_marginTop="0dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/textFieldPassword">
+
+        <CheckBox
+            android:id="@+id/cbRememberPass"
+            android:layout_width="200dp"
+            android:layout_height="48dp"
+            android:buttonTint="@color/design_default_color_secondary"
+            android:text="Lưu mật khẩu"
+            android:textColor="@color/design_default_color_secondary"
+            android:textSize="16sp" />
+
+        <TextView
+            android:id="@+id/txtForgotPw"
+            android:layout_alignParentEnd="true"
+            android:layout_width="wrap_content"
+            android:layout_height="48dp"
+            android:gravity="center"
+            android:text="Quên mật khẩu"
+            android:textColor="#FED36A"
+            android:textSize="16sp" />
+    </RelativeLayout>
+
+    <Button
+        android:id="@+id/btnDangNhap"
+        android:layout_above="@id/btnDangKy"
+        android:layout_width="match_parent"
+        android:layout_height="67dp"
+        style="@style/Widget.Material3.Button.Icon"
+        android:backgroundTint="#FED36A"
+        android:text="Đăng nhập"
+        android:textColor="#000000"
+        android:textSize="18sp" />
+
+    <Button
+        android:id="@+id/btnDangKy"
+        android:layout_alignParentBottom="true"
+        android:layout_width="match_parent"
+        android:layout_height="67dp"
+        style="?attr/materialButtonOutlinedStyle"
+        android:text="Đăng Ký"
+        android:textColor="#FFFFFF"
+        android:textSize="18sp"
+        app:strokeColor ="#FFFFFF"
+        app:strokeWidth ="2dp"
+        />
+
+</RelativeLayout>
