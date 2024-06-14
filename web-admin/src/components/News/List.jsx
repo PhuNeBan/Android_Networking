@@ -221,7 +221,7 @@ const List = (props) => {
                 <td className="d-flex">
                   <Box
                     w="150px" // Đặt chiều rộng của Box bằng "100%"
-                    h="100px" // Đặt chiều cao của Box bằng "100%"
+                    h="85px" // Đặt chiều cao của Box bằng "100%"
                     bg="gray.200"
                     borderRadius="10px"
                     overflow="hidden"
